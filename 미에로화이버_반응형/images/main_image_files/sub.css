@@ -1,0 +1,171 @@
+﻿@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
+
+body { font-family: 'Noto Sans Korean', 'Merriweather Sans', sans-serif;  }
+
+ul.top_nav .shop a{background:#f36f21 !important}
+ul.top_nav .shop a:hover{background:#fff !important}
+
+
+.marT30 { margin-top:30px; }
+ .marT10 { margin-top:10px; }
+.marT50 { margin-top:50px; }
+
+.pad0 { padding:0 !important; }
+
+.container { color:#777; }
+
+.line h3 { border-bottom:1px solid #ccc; padding-bottom:20px;font-family: 'Noto Sans Korean', 'Merriweather Sans', sans-serif; color:#777; font-size:20px; }
+
+.b_left { font-size:18px;  /*background:#f36f21; color:#fff; border-radius:50%; padding:40% 0; text-align:center;*/ }
+.b_left span { height:3px; background:#f36f21; width:120px;  }
+
+
+.p_title_line{ font-size:1.6em; line-height: 140%; color:#111; font-weight:500;margin-bottom:20px; font-family: 'Noto Sans Korean', 'Merriweather Sans', sans-serif; }
+.p_title_line span{display:block; width:30px; border-bottom:3px solid #f36f21; margin-bottom:5px; }
+
+.col_o { font-weight:400; color:#f36f21; }
+
+
+.sub_tit { width:100%; /*margin:0 -3px 60px 30px;margin-bottom:60px;*/display:inline-block;  background:#fff; box-shadow:0 13px 21px 0 rgba(153, 159, 183, .1);box-sizing:border-box;border-top:1px solid #ccc; }
+.sub_tit  div {  vertical-align:bottom; }
+.sub_tit figure { padding:5%; overflow:hidden;  }
+.sub_tit figure strong { font-size:30px;color:#111; letter-spacing:-1px;font-weight:500; }
+.sub_tit .sub_stit {font-size:13px;letter-spacing:1px;color:#f36f21; font-weight:400; }
+.sub_tit figure p { /*display:contents;*/ padding-top:25px;}
+
+
+.table-striped { color:#777; overflow:auto; }
+.table-striped th { color:#222; font-weight:500; width:20%; }
+.table-striped b { color:#222; font-weight:500; }
+
+
+.s24_con { background:#f5f5f5; padding:100px 0; width:100%; margin-top:50px; }
+
+.s24_center { text-align:center; margin-bottom:50px; }
+.s24_center h5 { color:#333; font-size:20px; font-weight:400; font-family: 'Noto Sans Korean', 'Merriweather Sans', sans-serif; margin-bottom:20px; }
+.s24_center h3 { color:#333; font-size:45px; font-weight:600; font-family: 'Noto Sans Korean', 'Merriweather Sans', sans-serif; margin-bottom:20px; }
+.s24_center span { color:#f36f21; }
+.s24_center p { line-height:1.5em; }
+
+
+.rtable {
+  /*!
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  // display: block;
+  // max-width: min-content;
+  */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+.rtable,
+.rtable--flip tbody {
+  -webkit-overflow-scrolling: touch;
+  background: radial-gradient(left, ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(right, ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+.rtable td:first-child,
+.rtable--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+.rtable td:last-child,
+.rtable--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+.rtable th {
+  text-align: left;
+  text-transform: uppercase;
+  background: #f2f0e6;
+}
+
+.rtable th,
+.rtable td {
+}
+
+.rtable--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.rtable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
+
+.rtable--flip td {
+  background-image: none !important;
+  border-left: 0;
+}
+
+.rtable--flip th:not(:last-child),
+.rtable--flip td:not(:last-child) {
+  border-bottom: 0;
+}*/
+
+
+.down_btn{margin-top:30px; display:flex; justify-content: center; align-items: center; border-top:1px solid #ddd; padding-top:30px}
+.down_btn a{color:#fff; width:220px; height:60px; font-weight:400; font-size:17px; letter-spacing:-0.5pt; background:#222; box-sizing:border-box; border:1px solid #222; display:flex; align-items: center;justify-content: center;}
+.down_btn a span{margin-right:8px;}
+.down_btn a:focus{color:#fff; text-decoration:none;}
+.down_btn a:hover{background:#fff; color:#222; }
+.down_btn a:nth-child(1){margin-right:10px}
+.down_btn a:nth-child(2){background:#f36f21; border-color:#f36f21}
+.down_btn a:nth-child(2):hover{background:#fff; color:#f36f21}
+
+
+@media all and (max-width:992px){ 
+.down_btn a{width: calc((100% - 10px)/2); font-size:15px; height:50px;}
+
+.p_title_line br{display: none;}
+
+}
+
+
+
+@media all and (max-width:480px){ 
+.down_btn{margin-top:20px; padding-top:20px}
+.down_btn a{width: calc((100% - 5px)/2);font-size:13px; height:40px;}
+.down_btn a span{font-size:18px; margin-right:5px}
+.down_btn a:nth-child(1){margin-right:5px}
+}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+//style4.scss
+
+div {
+  height: 50px;
+  margin-bottom: 10px;
+  background: pink;
+}
+
+//1부터 5까지 반복실행
+// @for $i from 1 to 6{
+//   div:nth-of-type(#{$i}){
+//     width:50px*$i; //50씩 증가
+//   }
+// }
+
+@for $i from 1 through 6 {
+  div:nth-of-type(#{$i}) {
+    width: 100px*$i; // 씩증가
+  }
+}
+
+dl, dd, dt{font-size:14px;}
+dl{border-top: 1px solid #333;}
+dd{margin:0;}
+dl > dt > i.fa-solid{
+  font-size:20px;
+  color:#333;
+  position: absolute;
+  right:1%;
+  transition: .5s;}
+
+.act{display:block !important;}
+.act2{transform: rotate(180deg) !important;}
+
+@for $i from 1 through 13 {
+  dt:nth-of-type(#{$i}) {
+    color: rgb(0, 99, 0);
+    padding:20px;
+    position:relative;
+    border-bottom:1px solid #ccc;
+  }
+}
+@for $i from 1 through 13 {
+  dd:nth-of-type(#{$i}) {
+    background: #e6e6e6;
+    color:#414141;
+    padding: 20px;
+    display:none;
+    
+  }
+}

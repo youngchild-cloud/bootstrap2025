@@ -1,0 +1,56 @@
+//mixin.scss
+
+// 변수선언
+$bgcolor_g:#ccc;
+$bgcolor_dark_g:#333;
+
+@mixin toggle_b{
+  width: 40px;height: 40px;
+  display:block;
+  position:relative;
+  cursor: pointer;
+}
+.navi{}
+
+.toggle_btn {
+  border: 1px solid $bgcolor_g;
+  @include toggle_b;
+}
+
+@mixin bar{
+  width: 38px;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  transition: 0.3s;
+}
+.bar {
+  @include bar;
+  background:$bgcolor_dark_g;
+  
+}
+.bar1{top:5px; text-indent: -999px;}
+.bar2{top:18px; text-indent: -999px;}
+.bar3{bottom:5px; font-size:0px;}
+
+#toggle:checked + .toggle_btn .bar2{display:none;}
+#toggle:checked + .toggle_btn .bar1{
+  position: absolute;
+  transform:rotate(45deg) translate(10px,10px);
+}
+#toggle:checked + .toggle_btn .bar3{
+  transform:rotate(-45deg) translate(10px,-10px)
+}
+
+// 자바스크립트로 적용할 서식
+.roate1{
+  transform:rotate(45deg) translate(10px,10px);
+}
+
+.none{display:none !important;}
+.roate2{
+  transform:rotate(-45deg) translate(10px,-10px)  !important;
+}
+
+

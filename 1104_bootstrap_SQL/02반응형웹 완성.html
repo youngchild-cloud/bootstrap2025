@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01반응형 내비게이션</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+  crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <style>
+    main{overflow-y:hidden;}
+    .logo{height: 50px;}
+    .caruosel_inner .carousel-item img{width: 1920px; height: 800px;}
+    #myCarousel{height:90vh;}
+    .carousel-item{
+      position:relative; height:90vh;
+      margin-bottom:10px;  
+      overflow: hidden;
+    }
+    .carousel-item h3, .carousel-item p{
+      position:absolute;
+      z-index: 100;
+      left:30%;top:100%;
+      color: #fff;
+      transition: 1s;
+      
+    
+  }
+  .carousel-item.active h3{
+    font-size:13rem;
+left:50%;top:60%;
+transform:translate(-50%, -50%);
+} 
+    .carousel-item h3 img{width:100%;}
+    .carousel-item.active p{
+      font-size:1.5rem;
+left:50%;top:80%;
+transform:translate(-50%, -50%);
+    } 
+    
+
+    /*점보트론*/
+    .jumbotron{
+      padding-top:50px;
+      padding-bottom:50px;
+      margin-bottom:50px;
+      
+      background-image: url(./image/1036644_add1_057.jpg); 
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position-y: 70%;
+      
+    }
+    .jumbotron h2{
+      font-size:6rem;
+      margin-bottom:20px;
+    }
+    .jumbotron .txt01{padding:10px 0px 30px 0px;}
+
+    /* 2번 콘텐츠 서식*/
+    .cont2 img{border-radius:50%; width: 400px; height: 400px;}
+    /* 가로 4단 콘텐츠*/
+    .box > img{width: 10%;height: 10%;}
+    .box1 img{width:100%}
+  </style>
+</head>
+<body>
+  <h2>01반응형 내비게이션</h2>
+
+  <header>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md" aria-label="내비게이션 바">
+      <div class="container-fluid">
+        <a href="#" title="">
+          <img src="./image/c12c94a8d3910539928ac3c6701354de_89322.png" alt="메인 로고" class="logo">
+        </a>
+
+        <!-- 모바일 해상도일 경우 나오는 전체메뉴 버튼 -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="전체메뉴" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+
+        <!--가로메뉴-->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="#" title="" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item"><a href="#" title="" class="nav-link ">Menu</a></li>
+            <li class="nav-item"><a href="#" title="" class="nav-link disabled">Disabled</a></li>
+            <li class="nav-item dropdown"><a href="#" title="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">드롭다운</a>
+              <ul class="dropdown-menu">
+              <li><a href="#" title="" class="dropdown-item">menu1</a></li>
+              <li><a href="#" title="" class="dropdown-item">menu2</a></li>
+              <li><a href="#" title="" class="dropdown-item">menu3</a></li>
+              <li><a href="#" title="" class="dropdown-item">menu4</a></li>
+            </ul>
+            </li>
+            
+          </ul>
+          <!-- 검색폼 -->
+          <form role="search">
+            <input type="search" placeholder="검색어 입력" aria-label="검색어 입력" class="form-control">
+          </form>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+    <!-- 메인 콘텐츠 영역 -->
+  <main>
+    <!-- 1. 메인슬라이드 -->
+    <article id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <!--   콘트롤 버튼 -->
+      <div class="carousel-indicators">
+        <button type="button" class="active" aria-label="slide1" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="true"></button>
+        <button type="button"  aria-label="slide2" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        <button type="button" aria-label="slide3" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- 슬라이드 박스-->
+      
+      <div class="caruosel_inner">
+        <div class="carousel-item active">
+          <h3></h3>
+          <img src="./image/11111111111111111.webp" alt=""></div>
+        <div class="carousel-item">
+          <h3>ARUNI</h3>
+          <p>포미오 가드침대+범퍼 10% 할인: 프롤아 매트리스 80mm 증정</p>
+          <img src="./image/111111111122222.webp" alt=""></div>
+        <div class="carousel-item">
+          <h3>POMIO</h3>
+          <p>아루니 범퍼침대 20%할인+스윙도어 무료증정</p>
+          <img src="./image/11111111111122222222223333333333.webp" alt=""></div>
+        <div class="carousel-item">
+          <h3>MONIEL</h3>
+          <p>모니엘 아기침대 런칭 특가, 범퍼 증정</p>
+          <img src="./image/111111222223333444.jpg" alt=""></div>
+
+      <div class="carousel-item">
+          <h3>MARON</h3>
+          <p>나무 향 가득히 꾸민 우리 아이방, 마론 시리즈</p>
+          <img src="./image/11112223334455.webp" alt=""></div>
+      </div>
+
+        <!--좌, 우측 버튼-->
+        <!-- 좌측 -->
+         <button type="button" class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually"></span>
+        </button>
+        
+        <button type="button" class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span aria-hidden="true" class="carousel-control-next-icon"></span>
+          <span class="visually"></span>
+         </button>
+    </article>
+
+    <!-- 2. 가로 3단 목록 콘텐츠 -->
+    <article class="container mt-5 mb-5">
+      <div class="row cont2">
+        <div class="col-lg-4 text-center">
+          <img src="./image/main_sell_pc1.png" alt="">
+          <h2 class="mt-5">모니엘 아기침대</h2>
+          <p>엄마의 로망을 담은 우리 아이 첫 침대</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="./image/main_sell_pc2.png" alt="">
+          <h2 class="mt-5">포미오 가드침대 스윙도어형</h2>
+          <p>안전하고 편안한 스윙도어 가드침대</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="./image/main_sell_pc3.png" alt="">
+          <h2 class="mt-5">마론 유아 교구장</h2>
+          <p>친환경 원목 가구로 꾸미는 아이의 공간</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. 점보트론 -->
+    <article class="container" >
+      <div class="jumbotron text-center bg-body-tertiary rounded-3">
+        <h2 class="text-light">STORE</h2>
+        <p class="txt01 text-light">직접 만지고 느껴보세요. <br>마치 숲에 온 듯 나무 향 가득한 숲소리 매장으로 초대합니다.</p>
+      <p><a href="#" title="" class="btn btn-danger btn-mg">더보기</a></p>
+      </div>
+    </article>
+    <!-- 4. 가로 4단 목록 콘텐츠 -->
+    <article class="container">
+        <img src="./image/main-insta-tit.png" alt="">
+        <h2>아이의 감각이 자라는 공간,
+숲소리와 함께하는 일상을 소개합니다.</h2>
+        <div class="row p-5 box" >
+        <div class="col-xs-12 col-sm-6 col-md-3 box1">
+          <img src="./image/pc_insta.1.jpg" alt="">
+          <h2></h2>
+          <a href="#" title="" class="btn btn-light btn-line">더보기</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 box1">
+          <img src="./image/pc_insta.2.jpg" alt="">
+          <h2></h2>
+          <a href="#" title="" class="btn btn-light btn-line">더보기</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 box1">
+          <img src="./image/pc_insta.3.jpg" alt="">
+          <h2></h2>
+          <a href="#" title="" class="btn btn-light btn-line">더보기</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 box1">
+          <img src="./image/pc_insta.4.jpg" alt="">
+          <h2></h2>
+          <a href="#" title="" class="btn btn-light btn-line">더보기</a>
+        </div>
+      </div>
+    </article>
+
+
+  </main>
+
+/<!-- 하단 푸터영역-->
+<footer class="container bg-dark pt-3 pb-3">
+  <div class="float-end">
+  <a href="#" title="위로바로가기" class="text-decoration-none link-light">Top</a>
+  </div>
+  <p>&copy;2025 Company, Inc. &middot;
+  <a href="#" title="이용약관" class="link-light text-decoration-none">Privacy</a>
+  &middot;<a href="#" title="정보" class="link-light text-decoration-none">Terms</a>
+</p>
+
+</footer>
+
+</body>
+</html>

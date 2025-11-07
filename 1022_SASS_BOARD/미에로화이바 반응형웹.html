@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미에로화이바 반응형웹</title>
+  <!-- 초기화 -->
+  <!-- 폰트어썸 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <!-- 상단 헤더 영역 -->
+  <header>
+    <div class="h_inner">
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/logo2.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 토글버튼 - 모바일 버전 -->
+     <div id="toggle">
+      <span>&nbsp;</span>
+      <span>&nbsp;</span>
+      <span>&nbsp;</span>
+     </div>
+
+     <!-- 메인메뉴 -->
+      <nav class="gnb">
+        <ul>
+          
+          <li><a href="#" title="미에로">미에로<i class="fas fa-angle-down"></i></a>
+          <ul class="sub none">
+            <li><a href="" title="브랜드스토리">브랜드스토리</a></li>
+            <li><a href="#" title="식이섬유 스토리">식이섬유 스토리</a></li>
+          </ul>
+        </li>
+
+          <li><a href="#" title="제품소개">제품소개<i class="fas fa-angle-down"></i></a>
+            <ul class="sub none">
+              <li class=""><a href="" title="미에로화이바">미에로화이바</a></li>
+              <li><a href="#" title="미에로화이바 SPARKLING ZERO SUGAR">미에로화이바 SPARKLING ZERO SUGAR</a></li>
+              <li><a href="#" title="헬씨올리고">헬씨올리고</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="TV광고">TV광고<i class="fas fa-angle-down"></i></a>
+            <ul class="sub none">
+              <li><a href="" title="인쇄광고">인쇄광고</a></li>
+              <li><a href="#" title="프로모션">프로모션</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="미에로 이벤트">미에로 이벤트<i class="fas fa-angle-down"></i></a>
+            <ul class="sub none">
+              <li><a href="" title="진행중인 이벤트">진행중인 이벤트</a></li>
+              <li><a href="#" title="당첨자 발표">당첨자 발표</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="공지사항">공지사항</a></li>
+
+          <li><a href="#" title="공식쇼핑몰"><i class="fa-solid fa-bag-shopping"></i>공식쇼핑몰</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <!-- 메인콘텐츠 영역 -->
+  <main></main>
+
+  <!-- 하단 푸터 영역 -->
+  <footer></footer>
+  
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 제이쿼리  -->
+  <script>
+    $(document).ready(function(){
+
+      const gnb = $('.gnb > ul > li')
+      const sub = $('.gnb > ul > li > .sub')
+
+      gnb.click(function(){
+        console.log(1)
+        $(this).children('.sub').removeClass('none')
+        $(this).siblings().children('.sub').addClass('none');
+      });
+      $('.header').click(function(){
+        sub.addClass('none')
+        console.log(2)
+      })
+
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_부트스트랩을 활용한 그리드레이아웃_실습하기</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h2>04_부트스트랩을 활용한 그리드레이아웃_실습하기</h2>
+  <p>12장의 상품 목록을 작성하여 반응형웹 그리드 레이아웃 구현하기</p>
+  <p>pc버전에서 가로 4장씩 배치, tablet해상도에서 3장, 모바일에서 2, 1장씩 배치하기</p>
+  <p>https://getbootstrap.kr/docs/5.0/examples/grid/#containers</p>
+
+  
+<h3>실습예제. 스타벅스 음료 페이지의 상품목록 그림레이아웃 설정하기</h3>
+<p>가로 해상도992px 이상일 경우 4칸씩 배치,<br>
+가로 해상도768px 이상일 경우 3칸씩 배치,<br>
+가로 해상도가 768미만일 경우 2칸씩 배치하기</p>
+
+<article class="star">
+  <h4>커피</h4>
+
+  <ul class="row">
+    <h5>블론드 로스트</h5>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/br1.jpg" alt="블론드 로스트1"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/br2.jpg" alt="블론드 로스트2"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/br3.jpg" alt="블론드 로스트3"><h6>음료1</h6></li>
+  </ul>
+
+  <ul class="row">
+    <h5>미디엄 로스트</h5>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/mi1.jpg" alt="미디엄 로스트1"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/mi2.jpg" alt="미디엄 로스트2"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/mi3.jpg" alt="미디엄 로스트3"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/mi4.jpg" alt="미디엄 로스트4"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/mi5.jpg" alt="미디엄 로스트5"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/mi6.jpg" alt="미디엄 로스트6"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/da1.jpg" alt="미디엄 로스트7"><h6>음료1</h6></li>
+  </ul>
+
+  <ul class="row">
+    <h5>다크 로스트</h5>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/da1.jpg" alt="다크 로스트1"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/da2.jpg" alt="다크 로스트2"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/da3.jpg" alt="다크 로스트3"><h6>음료1</h6></li>
+  </ul>
+
+  <ul class="row">
+    <h5>리저브 원두</h5>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re1.jpg" alt="리저브 원두1"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re2.jpg" alt="리저브 원두2"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re3.jpg" alt="리저브 원두3"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re4.jpg" alt="리저브 원두4"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re5.jpg" alt="리저브 원두5"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re6.jpg" alt="리저브 원두6"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re7.jpg" alt="리저브 원두7"><h6>음료1</h6></li>
+    <li class="col-lg-3 col-md-4 col-6"><img src="./images/re8.jpg" alt="리저브 원두7"><h6>음료1</h6></li>
+    
+  </ul>
+</article>
+
+  <style>
+    div{
+      border:3px solid #f00;
+      background:#ccc;
+      height:100px;}
+
+      .star{border:1px solid #f00;}
+      
+      h5{
+        font-weight:bold;
+        padding:20px 5px;
+        background:#d5dbdc;}
+      
+      li{
+        text-align: center;
+        list-style:none;}
+      li h5{font-size: 14px;}
+      li img{width: 100%;}
+      
+  </style>
+</body>
+</html>

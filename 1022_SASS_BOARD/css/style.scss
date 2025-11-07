@@ -1,0 +1,124 @@
+// style.scss
+
+$color_w: #fff;
+$color_g: #ccc;
+$f_color: #333;
+$m_color: #F36F21;
+
+$f_size_s: 12px;
+$f_size_m: 14px;
+$f_size_l: 16px;
+
+$width_size: 1200px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: '맑은 고딕', Arial, Helvetica, sans-serif;
+  font-size: $f_size_l;
+  color: $f_color;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: $f_color;
+  text-decoration: none;
+}
+
+
+// 상단 헤더 영역
+header {
+  width: 100%;
+  position: relative;
+
+}
+
+.h_inner {
+  width: $width_size;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #ccc;
+
+
+}
+
+h1 {
+  width: 210px;
+  background: $m_color;
+  float: left;
+  margin-top: 15px;
+  padding: 5px 5px;
+}
+
+h1 img {
+  width: 100%;
+}
+
+// 메인 메뉴 서식
+.gnb > ul {
+  float: right;
+  display: flex;
+  margin-top: 15px;
+  
+}
+
+.gnb>ul>li {}
+
+.gnb>ul>li>a {
+  font-size: $f_size_m;
+  color: $color_w;
+  font-weight: bold;
+  padding:10px;
+  margin: 0 3px;
+}
+  // .gnb의 마지막순서 공식쇼핑몰
+  .gnb > ul > li:last-child > a {
+    font-size: $f_size_s;
+    background: $f_color;
+    border: 1px solid $f_color;
+    transition: 0.3s;
+  }
+  .gnb > ul > li:last-child > a:hover{
+    background: $color_w;
+    color:$m_color;
+    border: 1px solid $m_color;
+  }
+
+
+
+.sub {
+  background: $color_w;
+  box-shadow: 0px 0px  3px  rgba(0,0,0,.3);
+  position:absolute;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.sub li {
+  text-align: center;
+  width: 100%;
+  }
+
+.sub li a {
+  color: $f_color;
+  font-size: $f_size_s;
+  width: 100%;
+  padding: 10px 20px;
+  transition: 0.3s;
+
+}
+.sub li a:hover{
+  background-color: $m_color;
+  color: $color_w;
+}
+// sub 메뉴 숨기기
+.none{display:none;}
+

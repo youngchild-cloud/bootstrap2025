@@ -1,0 +1,47 @@
+SQL : (Structure Query Language)의 약자 '구조화된 언어'
+
+DB언어 - Create(생성), Read(조회), Update(수정), Delete(삭제)
+
+1. DDL(데이터 정의어)
+     create(생성), alter(수정), drop(삭제) 등...
+
+2. DML(데이터 조작어)
+     insert(입력), select(조회), update(수정), delete(삭제)
+
+3. DCL(데이터 제어어)
+     grant(사용자 권한부여), remoke(사용자 권한 철회)
+
+---------------------------------------------------------------------
+문7) orders 테이블에서 주문자가 주문한 상품의 총 주문금액(sum)을 출력하시오.
+
+select sum(o_num*g_cost) 총판매금액 from orders o inner join goods g on o.g_code=g.g_code;
+
+---------------------------------
+
+데이터 수정하기
+
+update 테이블명 set 컬럼명='변경할값'  where 컬럼명=찾을 값;
+updata goods set g_cost='50' where g_name='녹차';
+
+---------------------------------
+문8) order테이블에서 동경반점의 주문금액의 합계 출력하기
+select sum(o_num*g_cost) 총 주문금액 from orders o inner join goods g on o.g_code=g.g_code where c_name = '동경반점';
+
+16,250원
+---------------------------------
+
+문9) goods테이블에서 가격의 합계를 출력하세요.
+select sum(g_cost) from goods;
+
+2,810원
+
+---------------------------------
+문10) orders테이블에서 주문정보의 개수를 출력하세요.
+select count(*) from orders;
+
+
+
+
+
+
+

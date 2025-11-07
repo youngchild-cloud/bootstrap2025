@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습예제_내물건팔기</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body style="width: 1200px;margin:0 auto;/">
+  <h2>실습예제_내물건팔기</h2>
+
+  <div class="d-flex justify-content-between ">
+    <i class="bi bi-x-lg m-3"></i>
+    <h2>내 물건 팔기</h2>
+    
+    <input type="submit" value="임시 저장" class="btn btn-outline-light text-secondary">
+  </div>
+
+  
+    <fieldset>
+      <legend></legend>
+      <label></label>
+
+        <label for="file" class="btn btn-outline-secondary align-items-center"><i class="bi bi-camera-fill"></i><span>0/10</span></label>
+      <input type="file" id="file" class="d-none">
+
+      <label for="title">제목</label>
+      <input type="text" id="title" placeholder="제목" class="form-control mb-3">
+
+      <label for="method">거래 방식</label>
+      <input type="radio" >판매하기
+      <input type="radio">판매하기
+
+      <input type="text" placeholder="가격을 입력해주세요" class="form-control mb-3" numbrt>
+
+      <label for="ch1">가격 제안 받기</label>
+      <input type="checkbox" id="ch1" class="form-check-input">
+
+      <label for="explan">자세한 설명</label>
+      <textarea rows="6" cols="22"id="explan" placeholder="다산동에 올릴..." class="form-control"></textarea>
+      <input type="button" value="자주 쓰는 문구">
+
+      <label for="place">거래 희망 장소</label>
+      <input type="text" id="place" placeholder="위치 추가" class="form-control mb-3">
+
+      <input type="button" value="보여줄 동네 선택 >">
+      <input type="button" value="작성완료" class="btn btn-warning d-grid">
+
+
+    </fieldset>
+  </>
+
+  
+</body>
+</html>

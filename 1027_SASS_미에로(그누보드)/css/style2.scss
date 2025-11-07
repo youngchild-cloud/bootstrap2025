@@ -1,0 +1,81 @@
+//style2/scss
+
+//전역변수
+$margin:10px;
+$padding:14px;
+$r_color:#f00;
+
+//.list h3, .list > h3
+.list{
+  h3{
+    color:#333;
+    padding:$padding;
+    margin:$margin;
+    border:1px solid $r_color;
+    font:{
+      family:'궁서체';
+      size:30px;
+      weight:bold;
+      style:italic;
+      }
+  }
+  ul{
+    margin:0px;
+    padding:0px;
+    > li{
+      list-style:none;
+      margin:10px 0px;
+      padding:10px;
+      border:1px solid #ccc;
+      line-height:40px;
+      > a{
+        color:#333;
+        text-decoration:none;
+        display:block;
+        &:hover{background-color: #ff0;
+          .list ul li{background-color: #f00;}
+        }
+      }
+    }
+  }
+}
+
+// 탭콘텐츠 서식
+$a_act:#0081a1;
+$t_align_c:center;
+$t_mnu_height:280px;
+
+//list 서식
+article{
+  width:400px;
+  border:1px solid $a_act;
+  > h3{display:none;}
+  > .tab{
+    display:flex;
+    justify-content: space-between;
+    img{width: 108%;}
+    ul{margin:0px;padding:0px;
+    height:$t_mnu_height;
+    > li{
+      list-style:none;
+      height:25%;
+      > a{
+        color:#333;
+        text-decoration: none;
+        line-height: 80px;
+        display:inline-block;
+        width:100%;
+        font-size:12px;
+      }
+      
+      .act{
+        background:$a_act;
+        color:#fff;
+        line-height: 80px;
+      }
+    }
+    }
+  }
+}
+
+

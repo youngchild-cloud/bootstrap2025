@@ -1,0 +1,58 @@
+.toggle_btn {
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.bar {
+  width: 38px;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  transition: 0.3s;
+  background: #333;
+}
+
+.bar1 {
+  top: 5px;
+  text-indent: -999px;
+}
+
+.bar2 {
+  top: 18px;
+  text-indent: -999px;
+}
+
+.bar3 {
+  bottom: 5px;
+  font-size: 0px;
+}
+
+#toggle:checked + .toggle_btn .bar2 {
+  display: none;
+}
+
+#toggle:checked + .toggle_btn .bar1 {
+  position: absolute;
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+#toggle:checked + .toggle_btn .bar3 {
+  transform: rotate(-45deg) translate(10px, -10px);
+}
+
+.roate1 {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.none {
+  display: none !important;
+}
+
+.roate2 {
+  transform: rotate(-45deg) translate(10px, -10px) !important;
+}
