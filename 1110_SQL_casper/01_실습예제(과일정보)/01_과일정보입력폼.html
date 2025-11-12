@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01_과일정보 입력 폼</title>
+</head>
+<body>
+  <h2>01_과일정보 입력 폼</h2>
+  <form name="과일정보 입력폼 " method="post" action="fruits_db_input.php">
+    <fieldset>
+      <legend>과일정보 입력하기</legend>
+      <div>
+        <p>
+          <label for="name_txt">name :</label>
+          <input type="text" id="name_txt" name="name_txt" placeholder="과일명을 입력하세요.">
+        </p>
+        <p>
+          <label for="price_txt">price :</label>
+          <input type="text" id="price_txt" name="price_txt" placeholder="가격을 입력하세요.">
+        </p>
+        <p>
+          <label for="color_txt">color :</label>
+          <input type="text" id="color_txt" name="color_txt" placeholder="과일 색상명을 입력하세요.">
+        </p>
+        <p>
+          <label for="country_txt">country : </label>
+          <input type="text" id="country_txt" name="country_txt" placeholder="원산지를 입력하세요.">
+        </p>
+
+        <div>
+          <input type="submit" value="데이터 입력하기">
+          <input type="reset" value="다시쓰기 또는 취소하기">
+        </div>
+      </div>
+
+      <a href="fruits_db_list_print.php" title="목록리스트 출력하기">과일정보 db리스트 출력하기</a>
+      
+    </fieldset>
+  </form>
+</body>
+</html>
